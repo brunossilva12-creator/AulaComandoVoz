@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#2563eb">
+    <meta name="description" content="Assistente virtual por texto e voz">
+
+    <title>Chatbot por Voz</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="chatbot">
+
+        <header class="cabecalho">
+            <div class="avatar">🤖</div>
+
+            <div class="cabecalho-texto">
+                <h1>Assistente Virtual</h1>
+                <p>Digite ou fale para conversar comigo</p>
+            </div>
+
+            <span class="status-online">
+                <span class="ponto-online"></span>
+                Online
+            </span>
+        </header>
+
+        <!-- CARDS DE SUGESTÕES -->
+        <section class="sugestoes" aria-labelledby="titulo-sugestoes">
+            <div class="sugestoes-topo">
+                <div>
+                    <h2 id="titulo-sugestoes">Como posso ajudar?</h2>
+                    <p>Escolha um assunto ou clique em uma pergunta.</p>
+                </div>
+            </div>
+
+            <div class="cards-sugestoes">
+
+                <button class="card-sugestao" type="button"
+                    data-pergunta="Qual é o seu nome?">
+                    <span class="card-icone">👋</span>
+                    <span class="card-titulo">Apresentação</span>
+                    <span class="card-descricao">
+                        Qual é o seu nome?
+                    </span>
+                </button>
+
+                <button class="card-sugestao" type="button"
+                    data-pergunta="O que você faz?">
+                    <span class="card-icone">🤖</span>
+                    <span class="card-titulo">Assistente virtual</span>
+                    <span class="card-descricao">
+                        O que você faz?
+                    </span>
+                </button>
+
+                <button class="card-sugestao" type="button"
+                    data-pergunta="O que é inteligência artificial?">
+                    <span class="card-icone">🧠</span>
+                    <span class="card-titulo">Inteligência artificial</span>
+                    <span class="card-descricao">
+                        O que é IA?
+                    </span>
+                </button>
+
+                <button class="card-sugestao" type="button"
+                    data-pergunta="Como funciona o microfone?">
+                    <span class="card-icone">🎙️</span>
+                    <span class="card-titulo">Comando de voz</span>
+                    <span class="card-descricao">
+                        Como usar o microfone?
+                    </span>
+                </button>
+
+                <button class="card-sugestao" type="button"
+                    data-pergunta="Como você responde em áudio?">
+                    <span class="card-icone">🔊</span>
+                    <span class="card-titulo">Resposta em áudio</span>
+                    <span class="card-descricao">
+                        Como funciona a voz?
+                    </span>
+                </button>
+
+                <button class="card-sugestao" type="button"
+                    data-pergunta="Como você funciona?">
+                    <span class="card-icone">💡</span>
+                    <span class="card-titulo">Funcionamento</span>
+                    <span class="card-descricao">
+                        Como você responde?
+                    </span>
+                </button>
+
+            </div>
+        </section>
+
+        <!-- ÁREA DE CONVERSA -->
+        <section
+            id="conversa"
+            class="conversa"
+            aria-label="Mensagens da conversa"
+            aria-live="polite"
+            aria-relevant="additions">
+
+            <div class="mensagem bot">
+                Olá! Como posso ajudar?
+            </div>
+
+        </section>
+
+        <!-- ÁREA DE ENVIO -->
+        <form id="formulario-chat" class="controles">
+
+            <label class="campo-mensagem">
+                <span class="visualmente-oculto">Digite sua pergunta</span>
+
+                <input
+                    type="text"
+                    id="mensagem"
+                    placeholder="Digite sua pergunta..."
+                    autocomplete="off"
+                    maxlength="500"
+                >
+            </label>
+
+            <button id="btnenviar" type="submit">
+                <span aria-hidden="true">➤</span>
+                <span class="texto-botao">Enviar</span>
+            </button>
+
+            <button
+                id="btnfalar"
+                type="button"
+                aria-label="Fazer pergunta por voz"
+                title="Falar">
+                🎙️
+            </button>
+
+        </form>
+
+        <p id="status" role="status" aria-live="polite"></p>
+
+        <footer class="rodape">
+            Assistente virtual • Texto e voz
+        </footer>
+
+    </main>
+</body>
+</html>
