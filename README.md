@@ -26,7 +26,7 @@ Um **Assistente Virtual interativo** com suporte a texto e comandos de voz, dese
 ### 🚀 Como executar localmente
 1. Clone este repositório:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/brunossilva12-creator/AulaComandoVoz
    ```
 2. Abra a pasta do projeto e execute o arquivo `index.html` em um navegador compatível com recursos de voz (como Google Chrome ou Microsoft Edge).
 
@@ -54,7 +54,7 @@ An interactive **Virtual Assistant** supporting both text and voice commands, de
 ### 🚀 How to run locally
 1. Clone this repository:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/brunossilva12-creator/AulaComandoVoz
    ```
 2. Open the project folder and launch the `index.html` file in a speech-compatible browser (such as Google Chrome or Microsoft Edge).
 
